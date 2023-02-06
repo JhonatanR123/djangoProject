@@ -6,6 +6,3 @@ Pillow==9.4.0
 django-storages==1.13.2 
 django-ckeditor==6.5.1
 psycopg2==2.9.5 
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Tu Nombre"
