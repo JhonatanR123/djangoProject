@@ -118,3 +118,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if not DEBUG:
     ALLOWED_HOSTS=env.list('ALLOWED_HOSTS_DEPLOY')
+
+print('prueba')
