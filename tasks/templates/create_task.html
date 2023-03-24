@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+<h1>Crear tarea</h1>
+
+<h1 style="color:red">{{error}}</h1>
+
+<form action="/tasks/create/" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>
+        Guardar
+    </button>
+</form>
+
+{% endblock %}

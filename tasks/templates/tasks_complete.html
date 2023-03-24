@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Tareas hechas</h1>
+<ul>
+    {% for task in tasks %}
+    <li>
+
+        {% if task.important %}
+        <strong>{{task.title}}</strong>
+        {% else %}
+        {{task.title}}
+        {% endif %}
+        <p>{{task.description}}</p>
+        <p>{{task.user.username}}</p>
+        <p>Realizada: {{task.datecompleted|date:'j M Y'}}</p>            
+
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
